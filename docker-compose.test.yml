@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      - db_test
+  db_test:
+    ports:
+      - "5432:5432"
+    build:
+      context: ./Europa.Database
+      dockerfile: Dockerfile.test

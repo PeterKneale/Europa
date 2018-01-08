@@ -1,0 +1,5 @@
+﻿@model ProductPageModel
+
+<h3>Product: @Model.Product.Name</h3>
+
+<a asp-controller="Category" asp-route-id="@Model.Category.Id">@Model.Category.Name</a>

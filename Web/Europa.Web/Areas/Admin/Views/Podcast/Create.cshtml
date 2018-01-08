@@ -1,0 +1,28 @@
+﻿@model PodcastCreateModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Create Podcast</h4>
+    </div>
+    <div class="panel-body">
+        <form asp-action="Create" method="POST">
+
+            <div asp-validation-summary="All"></div>
+
+            <input asp-for="CategoryId" type="hidden"  value="@Model.CategoryId"/>
+
+            <div class="form-group">
+                <label asp-for="Link" class="control-label"></label>
+                <div>
+                    <input asp-for="Link" class="form-control" />
+                    <span asp-validation-for="Link" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top:10px">
+                <button asp- class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>

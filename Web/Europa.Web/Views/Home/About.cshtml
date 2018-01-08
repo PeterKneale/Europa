@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<h3>Environment Variables</h3>
+<ul>
+    @{
+        var enumerator = Environment.GetEnvironmentVariables().GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            <li>@enumerator.Key - @enumerator.Value</li>
+        }
+    }
+</ul>

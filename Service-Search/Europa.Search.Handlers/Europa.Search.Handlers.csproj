@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Europa.Infrastructure\Europa.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Service-Query\Europa.Queries\Europa.Query.Messages.csproj" />
+    <ProjectReference Include="..\..\Service-Write\Europa.Write.Messages\Europa.Write.Messages.csproj" />
+    <ProjectReference Include="..\Europa.Search.Messages\Europa.Search.Messages.csproj" />
+    <ProjectReference Include="..\Europa.Search\Europa.Search.Index.csproj" />
+  </ItemGroup>
+
+</Project>

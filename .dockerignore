@@ -1,0 +1,5 @@
+bin/
+obj/
+!published/
+node_modules/
+

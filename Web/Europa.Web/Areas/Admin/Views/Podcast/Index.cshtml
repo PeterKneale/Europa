@@ -1,0 +1,13 @@
+﻿@model PodcastViewModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>@Model.CategoryName - @Model.Title</h4>
+    </div>
+    <div class="panel-body">
+        @foreach (var tag in Model.Tags)
+        {
+            <span class="label label-default">@tag</span>    
+        }
+    </div>
+</div>

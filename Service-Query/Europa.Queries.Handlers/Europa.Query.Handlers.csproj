@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Europa.Infrastructure\Europa.Infrastructure.csproj" />
+    <ProjectReference Include="..\Europa.Queries\Europa.Query.Messages.csproj" />
+    <ProjectReference Include="..\Europa.Query.Data\Europa.Query.Data.csproj" />
+  </ItemGroup>
+
+</Project>

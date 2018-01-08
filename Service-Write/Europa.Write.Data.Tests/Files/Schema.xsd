@@ -1,0 +1,54 @@
+﻿<xs:schema id="schema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://tempuri.org/schema.xsd"
+           xmlns="http://tempuri.org/schema.xsd"
+           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="schema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+
+        <xs:element name="category">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" msdata:DataType="System.Guid"/>
+              <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="podcast">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" msdata:DataType="System.Guid"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="category_id" type="xs:string" msdata:DataType="System.Guid"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="tag">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" msdata:DataType="System.Guid"/>
+              <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="podcast_tag" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" msdata:DataType="System.Guid"/>
+              <xs:element name="podcast_id" type="xs:string" msdata:DataType="System.Guid"/>
+              <xs:element name="tag_id" type="xs:string" msdata:DataType="System.Guid"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+

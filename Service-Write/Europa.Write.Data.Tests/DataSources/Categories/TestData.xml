@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<schema xmlns="http://tempuri.org/schema.xsd">
+
+  <!--
+  * category 1
+  *   podcast 1 category 2
+  *   podcast 2 category 2
+  * category 2
+  *   podcast 1 category 2
+  *   podcast 2 category 2
+  * category 3
+  -->
+  
+  <!-- Category # 1 -->
+  <category xmlns="">
+    <id>00000000-0000-0000-0000-000000000001</id>
+    <name>category 1</name>
+  </category>
+  
+      <podcast xmlns="">
+        <id>00000000-0000-0000-0000-000000000011</id>
+        <name>podcast 1 category 1</name>
+        <category_id>00000000-0000-0000-0000-000000000001</category_id>
+      </podcast>
+
+      <podcast xmlns="">
+        <id>00000000-0000-0000-0000-000000000012</id>
+        <name>podcast 2 category 1</name>
+        <category_id>00000000-0000-0000-0000-000000000001</category_id>
+      </podcast>
+
+  <!-- Category # 2 -->
+  <category xmlns="">
+    <id>00000000-0000-0000-0000-000000000002</id>
+    <name>category 2</name>
+  </category>
+  
+      <podcast xmlns="">
+        <id>00000000-0000-0000-0000-000000000021</id>
+        <name>podcast 1 category 2</name>
+        <category_id>00000000-0000-0000-0000-000000000002</category_id>
+      </podcast>
+
+      <podcast xmlns="">
+        <id>00000000-0000-0000-0000-000000000022</id>
+        <name>podcast 2 category 2</name>
+        <category_id>00000000-0000-0000-0000-000000000002</category_id>
+      </podcast>
+
+  <!-- Category # 3 -->
+  <category xmlns="">
+    <id>00000000-0000-0000-0000-000000000003</id>
+    <name>category 3</name>
+  </category>
+
+</schema>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<schema xmlns="http://tempuri.org/schema.xsd">
+
+  <!--
+  * category
+  *   podcast 1 tags:
+  *   podcast 2 tags: fast
+  *   podcast 3 tags: fast, cheap
+  -->
+
+  <!-- Tags -->
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000021</id>
+    <name>fast</name>
+  </tag>
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000022</id>
+    <name>cheap</name>
+  </tag>
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000023</id>
+    <name>good</name>
+  </tag>
+
+  <!-- Category -->
+  <category xmlns="">
+    <id>00000000-0000-0000-0000-000000000001</id>
+    <name>category 1</name>
+  </category>
+
+  <!-- Products -->
+  <podcast xmlns="">
+    <id>00000000-0000-0000-0000-000000000011</id>
+    <name>podcast 1</name>
+    <category_id>00000000-0000-0000-0000-000000000001</category_id>
+  </podcast>
+
+  <podcast xmlns="">
+    <id>00000000-0000-0000-0000-000000000012</id>
+    <name>podcast 2</name>
+    <category_id>00000000-0000-0000-0000-000000000001</category_id>
+  </podcast>
+
+  <podcast xmlns="">
+    <id>00000000-0000-0000-0000-000000000013</id>
+    <name>podcast 3</name>
+    <category_id>00000000-0000-0000-0000-000000000001</category_id>
+  </podcast>
+
+  <!-- Product Tags -->
+  
+  <!-- Product 2 - fast -->
+  <podcast_tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000001</id>
+    <podcast_id>00000000-0000-0000-0000-000000000012</podcast_id>
+    <tag_id>00000000-0000-0000-0000-000000000021</tag_id>
+  </podcast_tag>
+
+  <!-- Product 3 - fast -->
+  <podcast_tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000002</id>
+    <podcast_id>00000000-0000-0000-0000-000000000013</podcast_id>
+    <tag_id>00000000-0000-0000-0000-000000000021</tag_id>
+  </podcast_tag>
+
+  <!-- Product 3 - cheap -->
+  <podcast_tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000003</id>
+    <podcast_id>00000000-0000-0000-0000-000000000013</podcast_id>
+    <tag_id>00000000-0000-0000-0000-000000000022</tag_id>
+  </podcast_tag>
+
+</schema>

@@ -1,0 +1,30 @@
+﻿@model CategoryPageModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="btn-group pull-right">
+            <a asp-action="Edit" asp-route-id="@Model.Category.Id" class="btn btn-default">Edit Category</a>
+            <a asp-action="Create" asp-controller="Podcast" asp-route-id="@Model.Category.Id" class="btn btn-default">Create Podcast</a>
+        </div>
+        <h4>Category: @Model.Category.Name</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            @foreach (var podcast in Model.Podcasts)
+            {
+                <tr>
+                    <td><a asp-controller="Product" asp-action="Index" asp-route-id="@podcast.Id">@podcast.Title</a></td>
+                    <td><a asp-controller="Product" asp-action="Edit" asp-route-id="@podcast.Id">Edit</a></td>
+                    <td><a asp-controller="Product" asp-action="Delete" asp-route-id="@podcast.Id" class="text-danger">Delete</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

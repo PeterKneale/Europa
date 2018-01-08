@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<schema xmlns="http://tempuri.org/schema.xsd">
+
+  <!-- Tags -->
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000001</id>
+    <name>fast</name>
+  </tag>
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000002</id>
+    <name>cheap</name>
+  </tag>
+  <tag xmlns="">
+    <id>00000000-0000-0000-0000-000000000003</id>
+    <name>good</name>
+  </tag>
+</schema>

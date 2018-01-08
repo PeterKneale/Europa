@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web:
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+  db:
+    ports:
+      - "5432:5432"
+    build:
+      context: ./Europa.Database
+      dockerfile: Dockerfile

@@ -1,0 +1,24 @@
+﻿@model CategoryCreateModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Create Category</h4>
+    </div>
+    <div class="panel-body">
+        <form asp-action="Create" method="POST">
+            
+            <div asp-validation-summary="All"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <div>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top:10px">
+                <button asp- class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

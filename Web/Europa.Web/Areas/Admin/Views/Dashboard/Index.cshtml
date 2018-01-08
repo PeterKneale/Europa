@@ -1,0 +1,31 @@
+﻿@model DashboardPageModel
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <span>
+            <a asp-action="Create" asp-controller="Category" class="btn btn-default pull-right">Create</a>
+        </span>
+        <h4>Categories</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+            <tr>
+                <th>Category</th>
+                <th>Podcasts</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td><a asp-controller="Category" asp-action="Index" asp-route-id="@category.Id">@category.Name</a></td>
+                    <td>@category.PodcastCount</td>
+                    <td><a asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id">Edit</a></td>
+                    <td><a asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id" class="text-danger">Delete</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

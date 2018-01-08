@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeHollow.FeedReader" Version="1.1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Europa.Infrastructure\Europa.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Service-Write\Europa.Write.Messages\Europa.Write.Messages.csproj" />
+    <ProjectReference Include="..\Europa.Feed.Messages\Europa.Feed.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
